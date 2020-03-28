@@ -1,0 +1,29 @@
+:set -XFlexibleInstances
+:set -XTypeSynonymInstances
+:set -XFunctionalDependencies
+:set -XMultiParamTypeClasses
+
+import Data.Time
+-- import Predlude hiding ((-))
+
+class OpSub a b o | a b -> o where
+  (-) :: a -> b -> o
+
+instance OpSub Int Int Int where
+  a - b = a + (-b)
+
+instance OpSub String String Int where
+  s - t = (length s) - (length t)
+
+instance OpSub UTCTime UTCTime NominalDiffTime where
+  t1 - t2 = t1 `diffUTCTime` t2
+
+main = do
+  let a = (3::Int) -(2::Int)
+  let b = "brain" - "dead"
+  t1 <- getCurrentTime
+  t2 <- getCurrentTime
+  let c = t2 - t1
+  print a
+  print b
+  print c
