@@ -1,2 +1,4 @@
 不要再使用老的时间包System.Time. Real World Haskell例子过时了
 新项目使用Data.Time
+
+https://wiki.haskell.org/Cookbook/Dates_And_Time
