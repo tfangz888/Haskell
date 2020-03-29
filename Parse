@@ -1,0 +1,9 @@
+Parsec or Attoparsec
+
+Parsec: programming languages, configuration file formats and user input
+Attoparsec: network protocols, dealing with binary data and file formats or reading in large amounts of automatically generated data. Things where you're dealing with time constraints or large amounts of data
+
+https://stackoverflow.com/questions/19208231/attoparsec-or-parsec-in-haskell
+
+http://cnhaskell.com/chp/16.html
+https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/attoparsec
